@@ -2,35 +2,50 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/main-style.css">
 		<!--
 			This is the settings page. A user can adjust their preferences here. Empty for now given scope.
 			Links to: home, user, settings, account.
 		-->
 	</head>
 	
-	<body>
-		<!--Sidebar-->
-		<div>
+	<body>		
+		<div id="sidebar">
 			<!--Pressable tabs-->
-			<div>
-				<a href="home.html">
-					<p>Home</p>
-				</a>
-				<a href="profile.html">
-					<p>Profile</p>
-				</a>
-				<a href="settings.html">
-					<p>Settings</p>
-				</a>
-				<div>
-					<a href="settings.html">
-						<p>Preferences</p>
-					</a>
-					<a href="account.html">
-						<p>Account</p>
-					</a>
+			<table id="tabs">
+				<tr>
+					<td>
+						<a href="home.html" id="tab-text">Home</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="user.html" id="tab-text">Profile</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="settings.html" id="tab-text">Settings</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="settings.html" id="tab-text">Preferences</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="account.html" id="tab-text">Account</a>
+					</td>
+				</tr>
+			</table>
+			
+			<!--New post button-->
+			<a href="new.html" id="post-text">
+				<div id="post">
+					<p>New Post</p>
 				</div>
-			</div>
+			</a>
 		</div>
 		
 		<!--Main content-->

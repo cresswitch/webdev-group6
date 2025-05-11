@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/main-style.css">
 		<!--
 			This is the post page. A user can view a post and its interactions here.
 			Links to: home, user, settings, new post.
@@ -10,19 +11,34 @@
 	
 	<body>
 		<!--Sidebar-->
-		<div>
+		<div id="container">
+		<!--Sidebar-->
+		<div id="sidebar">
 			<!--Pressable tabs-->
-			<div>
-				<a href="home.html">
-					<p>Home</p>
-				</a>
-				<a href="profile.html">
-					<p>Profile</p>
-				</a>
-				<a href="settings.html">
-					<p>Settings</p>
-				</a>
-			</div>
+			<table id="tabs">
+				<tr>
+					<td>
+						<a href="home.html" id="tab-text">Home</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="user.html" id="tab-text">Profile</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="settings.html" id="tab-text">Settings</a>
+					</td>
+				</tr>
+			</table>
+			
+			<!--New post button-->
+			<a href="new.html" id="post-text">
+				<div id="post">
+					<p>New Post</p>
+				</div>
+			</a>
 		</div>
 		
 		<!--Main content-->

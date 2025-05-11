@@ -132,3 +132,22 @@ a{
 #user-follow{
 	margin-top: -20px;
 }
+
+#new-post{
+	padding-top: 10px;
+}
+
+#post-head{
+	font-size: 150%;
+}
+
+#new-post textarea{
+	width: 90%;
+	height: 400px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	resize: none;
+	vertical-align: top;
+	padding: 5px;
+	font-size: 20px;
+}
