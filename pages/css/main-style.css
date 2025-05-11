@@ -1,0 +1,134 @@
+body{
+	font-family: Verdana;
+	text-align: center;
+	background-color: #cce0ff;
+}
+
+#container{
+	display: grid;
+	grid-template-areas:
+		"menu main";
+	grid-template-columns: 1fr 3fr;
+}
+
+#sidebar{
+	background-color: #3b79db;
+	width: 20%;
+	height: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	padding-top: 50px;
+	padding-left: 50px;
+	margin-right: 30px;
+	text-align: center;
+	font-size: 150%;
+	grid-area: menu;
+}
+
+#sidebar td{
+	text-align: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#tab-text{
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+#post{
+	position: absolute;
+	margin-top: 80%;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	padding-left: 50px;
+	padding-right: 50px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+#post-text{
+	text-decoration: none;
+	font-weight: bold;
+	color: #3b79db;
+}
+
+#main{
+	float: left;
+	grid-area: main;
+	text-align: left;
+	padding-top: 10px;
+}
+
+#searchbar{
+	height: 20px;
+	width: 90%;
+	font-size: 20px;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+#post-box, #user-box{
+	width: 90%;
+	padding: 10px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	border-radius: 5px;
+	background-color: #ffffff;
+	margin-bottom: 20px;
+}
+
+#post-box table{
+	width: 100%;
+}
+
+#pfp{
+	padding-left: 30px;
+	padding-right: 20px;
+}
+
+#user{
+	font-size: 25px;
+}
+
+#post-content{
+	vertical-align: top;
+	padding-right: 20px;
+	color: black;
+}
+
+#post-box img{
+	height: 60px;
+	width: 60px;
+	border-radius: 30px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#user-pfp{
+	padding-left: 15px;
+}
+
+#user-box img{
+	height: 120px;
+	width: 120px;
+	border-radius: 60px;
+}
+
+#user-info{
+	padding-left: 30px;
+}
+
+#user-name{
+	font-size: 180%;
+}
+
+#user-follow{
+	margin-top: -20px;
+}

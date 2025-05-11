@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/main-style.css">
 		<!--
 			This is the home page. Contains main content.
 			Links to: user, search, post, new post, settings.
@@ -9,53 +10,98 @@
 	</head>
 	
 	<body>
+	<div id="container">
 		<!--Sidebar-->
-		<div>
+		<div id="sidebar">
 			<!--Pressable tabs-->
-			<div>
-				<a href="home.html">
-					<p>Home</p>
-				</a>
-				<a href="profile.html">
-					<p>Profile</p>
-				</a>
-				<a href="settings.html">
-					<p>Settings</p>
-				</a>
-			</div>
+			<table id="tabs">
+				<tr>
+					<td>
+						<a href="home.html" id="tab-text">Home</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="user.html" id="tab-text">Profile</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="settings.html" id="tab-text">Settings</a>
+					</td>
+				</tr>
+			</table>
 			
 			<!--New post button-->
-			<div>
-				<a href="new.html">
+			<a href="new.html" id="post-text">
+				<div id="post">
 					<p>New Post</p>
-				</a>
-			</div>
+				</div>
+			</a>
 		</div>
 		
 		<!--Main content-->
-		<div>
+		<div id="main">
 			<!--Search bar-->
 			<div>
-				<input type="text" placeholder="Search...">
+				<form>
+					<input type="text" placeholder="Search..." id="searchbar">
+				</form>
 			</div>
 			
 			<!--Post-->
-			<div>
-				<!--User segment-->
-				<a href="user.html">
-					<div>
-						<img src=""/>
-						<p>User 1</p>
-					</div>
-				</a>
-				
-				<!--Post segment-->
-				<a href="post.html">
-					<div>
-						<p>Sample text</p>
-					</div>
-				</a>
+			<a href="post.html">
+			<div id="post-box">				
+				<table>
+					<tr>
+						<td id="pfp">
+						<a href="user.html">
+							<img src="assets/test.jpg"/>
+						</a>
+						</td>
+						<td>
+						<a href="user.html">
+							<p id="user">User_Sheep</p>
+						</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td id="post-content">
+							<p>sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content </p>
+						</td>
+					</tr>
+				</table>
 			</div>
+			</a>
+			
+			<a href="post.html">
+			<div id="post-box">				
+				<table>
+					<tr>
+						<td id="pfp">
+						<a href="user.html">
+							<img src="assets/test2.jpg"/>
+						</a>
+						</td>
+						<td>
+						<a href="user.html">
+							<p id="user">User_Dog</p>
+						</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+						</td>
+						<td id="post-content">
+							<p>sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content sample content </p>
+						</td>
+					</tr>
+				</table>
+			</div>
+			</a>
 		</div>
+	</div>
 	</body>
 </html>

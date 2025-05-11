@@ -1,0 +1,46 @@
+body{
+	font-family: Verdana;
+	text-align: center;
+	background-color: #3b79db;
+	padding-top: 100px;
+	display: flex;
+}
+
+#container{
+	background-color: #ffffff;
+	width: 15%;
+	margin: auto;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+
+#login{
+	font-size: 150%
+}
+
+#text{
+	text-align: left;
+}
+
+input{
+	text-align: left;
+	width: 100%;
+}
+
+#submit{
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-radius: 8px;
+	background-color: #3b79db;
+	width: 30%;
+	margin: auto;
+}
+
+#submit-text{
+	text-decoration: none;
+	color: white;
+}
